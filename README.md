@@ -19,7 +19,7 @@ mksu和ksu-next仓库已合并，后续只更新此仓库
 推荐使用[HorizonKernelFlasher](https://github.com/libxzr/HorizonKernelFlasher)进行刷写（[点此下载](https://github.com/libxzr/HorizonKernelFlasher/releases/download/v1.3/app-release.apk)）
 
 ## ⭐Star
-[![Stars](https://starchart.cc/mcxiaochenn/Action_OKI_KernelSU_SUSFS.svg?variant=adaptive)](mcxiaochenn/Action_OKI_KernelSU_SUSFS)
+[![Stars](https://starchart.cc/mcxiaochenn/Action_OKI_KernelSU_SUSFS.svg?variant=adaptive)](/)
 
 ## 致谢
 
