@@ -1,10 +1,34 @@
 import { defineConfig } from 'vitepress'
+import { localSearchOptions } from "./search";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Oneplus Kernel Image",
   description: "使用GA编译一加KSU分支内核并发布构建",
   themeConfig: {
+  
+    outline: {
+        level: "deep", // 右侧大纲标题层级
+        label: "目录", // 右侧大纲标题文本配置
+    },
+    
+    darkModeSwitchLabel: "切换日光/暗黑模式",
+    sidebarMenuLabel: "文章",
+    returnToTopLabel: "返回顶部",
+    lastUpdatedText: "最后更新", // 最后更新时间文本配置, 需先配置lastUpdated为true
+     
+     // 文档页脚文本配置
+    docFooter: {
+        prev: "上一篇",
+        next: "下一篇",
+    },
+    // 搜索配置（二选一）
+    search: {
+        // 本地离线搜索
+        provider: "local",
+        options: localSearchOptions,
+    }, // 导航栏右侧社交链接配置
+    
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
@@ -13,7 +37,7 @@ export default defineConfig({
 
     footer: {
         message: '感谢GitHub Pages提供网站搭建服务',
-        copyright: 'Copyright © 2024-现在 酷安@我不是尘桑。'
+        copyright: 'Copyright © 2024-present 酷安@我不是尘桑'
     },
 
     editLink: {
